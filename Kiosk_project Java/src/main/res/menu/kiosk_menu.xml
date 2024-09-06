@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item1"
+        android:title="메뉴 설정 화면으로"
+        android:icon="@android:drawable/arrow_down_float"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/item2"
+        android:title="TEST_MENU2"
+        android:icon="@android:drawable/arrow_down_float"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/item3"
+        android:title="TEST_MENU3"
+        android:icon="@android:drawable/arrow_down_float"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/item4"
+        android:title="TEST_MENU4"
+        android:icon="@android:drawable/arrow_down_float"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/item5"
+        android:title="어플리케이션 종료"
+        android:icon="@android:drawable/arrow_down_float"
+        app:showAsAction="never" />
+
+</menu>

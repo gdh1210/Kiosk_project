@@ -1,0 +1,832 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Kiosk">
+
+    <ImageView
+        android:id="@+id/backbt"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:contentDescription="뒤로가기"
+        android:onClick="bt_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/home" />
+
+    <Button
+        android:id="@+id/stbt_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="25dp"
+        android:backgroundTint="#2196F3"
+        android:onClick="stbt_1"
+        android:text="포장으로 변경"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/backbt"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backbt">
+
+        <Button
+            android:id="@+id/tabbt_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#2196F3"
+            android:onClick="tabbt"
+            android:text="커피"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:strokeColor="#3F51B5"
+            app:strokeWidth="3dp" />
+
+        <Button
+            android:id="@+id/tabbt_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#2196F3"
+            android:onClick="tabbt"
+            android:text="논커피"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:strokeColor="#3F51B5"
+            app:strokeWidth="3dp" />
+
+        <Button
+            android:id="@+id/tabbt_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#2196F3"
+            android:onClick="tabbt"
+            android:text="스무디"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:strokeColor="#3F51B5"
+            app:strokeWidth="3dp" />
+
+        <Button
+            android:id="@+id/tabbt_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#2196F3"
+            android:onClick="tabbt"
+            android:text="주스"
+            android:textStyle="bold"
+            app:strokeColor="#3F51B5"
+            app:strokeWidth="3dp" />
+
+        <Button
+            android:id="@+id/tabbt_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#2196F3"
+            android:onClick="tabbt"
+            android:text="디저트"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:strokeColor="#3F51B5"
+            app:strokeWidth="3dp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="0dp"
+        android:layout_height="400dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+        <ScrollView
+            android:id="@+id/sv1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/coffee_ib_1"
+                        android:layout_width="125dp"
+                        android:layout_height="125dp"
+                        android:backgroundTint="#FFFFFF"
+                        android:contentDescription="1"
+                        android:onClick="order_coffee"
+                        android:src="@drawable/coffee1"
+                        android:tag="1" />
+
+                    <ImageButton
+                        android:id="@+id/coffee_ib_2"
+                        android:layout_width="125dp"
+                        android:layout_height="125dp"
+                        android:backgroundTint="#FFFFFF"
+                        android:contentDescription="2"
+                        android:onClick="order_coffee"
+                        android:src="@drawable/coffee2"
+                        android:tag="2" />
+
+                    <ImageButton
+                        android:id="@+id/coffee_ib_3"
+                        android:layout_width="125dp"
+                        android:layout_height="125dp"
+                        android:backgroundTint="#FFFFFF"
+                        android:contentDescription="3"
+                        android:onClick="order_coffee"
+                        android:src="@drawable/coffee3"
+                        android:tag="3" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/coffee_name_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:tag="1"
+                        android:text="프렌치 애플 나이트로" />
+
+                    <TextView
+                        android:id="@+id/coffee_name_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:tag="2"
+                        android:text="콜드브루 플로트" />
+
+                    <TextView
+                        android:id="@+id/coffee_name_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:tag="3"
+                        android:text="벨벳 다크모카 나이트로" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/coffee_price_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:tag="1"
+                        android:text="4,500원" />
+
+                    <TextView
+                        android:id="@+id/coffee_price_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:tag="2"
+                        android:text="3,000원" />
+
+                    <TextView
+                        android:id="@+id/coffee_price_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:tag="3"
+                        android:text="5,000원" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/coffee_ib_4"
+                        android:layout_width="125dp"
+                        android:layout_height="125dp"
+                        android:backgroundTint="#FFFFFF"
+                        android:contentDescription="4"
+                        android:onClick="order_coffee"
+                        android:src="@drawable/coffee4"
+                        android:tag="4" />
+
+                    <ImageButton
+                        android:id="@+id/coffee_ib_5"
+                        android:layout_width="125dp"
+                        android:layout_height="125dp"
+                        android:backgroundTint="#FFFFFF"
+                        android:contentDescription="5"
+                        android:onClick="order_coffee"
+                        android:src="@drawable/coffee5"
+                        android:tag="5" />
+
+                    <ImageButton
+                        android:id="@+id/coffee_ib_6"
+                        android:layout_width="125dp"
+                        android:layout_height="125dp"
+                        android:backgroundTint="#FFFFFF"
+                        android:contentDescription="6"
+                        android:onClick="order_coffee"
+                        android:src="@drawable/coffee6"
+                        android:tag="6" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/coffee_name_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:tag="4"
+                        android:text="사케라또 오버 아이스" />
+
+                    <TextView
+                        android:id="@+id/coffee_name_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="럼 샷 코르타도" />
+
+                    <TextView
+                        android:id="@+id/coffee_name_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:tag="6"
+                        android:text="바닐라 빈 라떼" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/coffee_price_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:tag="4"
+                        android:text="4,000원" />
+
+                    <TextView
+                        android:id="@+id/coffee_price_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="4,300원" />
+
+                    <TextView
+                        android:id="@+id/coffee_price_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="4,500원" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/coffee_ib_7"
+                        android:layout_width="125dp"
+                        android:layout_height="125dp"
+                        android:backgroundTint="#FFFFFF"
+                        android:contentDescription="7"
+                        android:onClick="order_coffee"
+                        android:src="@drawable/coffee7"
+                        android:tag="7" />
+
+                    <ImageButton
+                        android:id="@+id/coffee_ib_8"
+                        android:layout_width="125dp"
+                        android:layout_height="125dp"
+                        android:backgroundTint="#FFFFFF"
+                        android:contentDescription="8"
+                        android:onClick="order_coffee"
+                        android:src="@drawable/coffee8"
+                        android:tag="8" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/coffee_name_7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:tag="7"
+                        android:text="아이스 카페라떼" />
+
+                    <TextView
+                        android:id="@+id/coffee_name_8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:tag="8"
+                        android:text="클래식 아포가토" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/coffee_price_7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:tag="7"
+                        android:text="3,500원" />
+
+                    <TextView
+                        android:id="@+id/coffee_price_8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:tag="8"
+                        android:text="6,000원" />
+                </TableRow>
+
+            </TableLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:id="@+id/sv2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <ImageButton
+                        android:id="@+id/noncoffee_ib_1"
+                        android:layout_width="125dp"
+                        android:layout_height="125dp"
+                        android:backgroundTint="#FFFFFF"
+                        android:onClick="order_coffee"
+                        android:src="@drawable/noncoffee101"
+                        android:tag="101" />
+
+                    <ImageButton
+                        android:id="@+id/noncoffee_ib_2"
+                        android:layout_width="125dp"
+                        android:layout_height="125dp"
+                        android:backgroundTint="#FFFFFF"
+                        android:onClick="order_coffee"
+                        android:src="@drawable/noncoffee102"
+                        android:tag="102" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/noncoffee_name_101"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="101"
+                        android:text="흑당 버블 밀크티" />
+
+                    <TextView
+                        android:id="@+id/noncoffee_name_102"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="102"
+                        android:text="얼그레이 밀크티" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/noncoffee_price_101"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="101"
+                        android:text="5,000원" />
+
+                    <TextView
+                        android:id="@+id/noncoffee_price_102"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="102"
+                        android:text="4,500원" />
+                </TableRow>
+            </TableLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:id="@+id/sv3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <ImageButton
+                        android:id="@+id/smoothie_ib_1"
+                        android:layout_width="125dp"
+                        android:layout_height="125dp"
+                        android:backgroundTint="#FFFFFF"
+                        android:onClick="order_smoothie"
+                        android:src="@drawable/smoothie1"
+                        android:tag="1" />
+
+                    <ImageButton
+                        android:id="@+id/smoothie_ib_2"
+                        android:layout_width="125dp"
+                        android:layout_height="125dp"
+                        android:backgroundTint="#FFFFFF"
+                        android:onClick="order_smoothie"
+                        android:src="@drawable/smoothie2"
+                        android:tag="2" />
+
+                    <ImageButton
+                        android:id="@+id/smoothie_ib_3"
+                        android:layout_width="125dp"
+                        android:layout_height="125dp"
+                        android:backgroundTint="#FFFFFF"
+                        android:onClick="order_smoothie"
+                        android:src="@drawable/smoothie3"
+                        android:tag="3" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/smoothie_name_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:tag="1"
+                        android:text="골드망고 스무디" />
+
+                    <TextView
+                        android:id="@+id/smoothie_name_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:tag="2"
+                        android:text="코코넛 커피 스무디" />
+
+                    <TextView
+                        android:id="@+id/smoothie_name_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:tag="3"
+                        android:text="망고바나나 스무디" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/smoothie_price_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:tag="1"
+                        android:text="4,000원" />
+
+                    <TextView
+                        android:id="@+id/smoothie_price_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:tag="2"
+                        android:text="4,800원" />
+
+                    <TextView
+                        android:id="@+id/smoothie_price_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:tag="3"
+                        android:text="5,000원" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <ImageButton
+                        android:id="@+id/smoothie_ib_4"
+                        android:layout_width="125dp"
+                        android:layout_height="125dp"
+                        android:backgroundTint="#FFFFFF"
+                        android:onClick="order_smoothie"
+                        android:src="@drawable/smoothie4"
+                        android:tag="4" />
+
+                    <ImageButton
+                        android:id="@+id/smoothie_ib_5"
+                        android:layout_width="125dp"
+                        android:layout_height="125dp"
+                        android:backgroundTint="#FFFFFF"
+                        android:onClick="order_smoothie"
+                        android:src="@drawable/smoothie5"
+                        android:tag="5" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/smoothie_name_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:tag="4"
+                        android:text="망고히비스커스 스무디" />
+
+                    <TextView
+                        android:id="@+id/smoothie_name_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:tag="5"
+                        android:text="딸기쿠키 스무디" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/smoothie_price_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:tag="4"
+                        android:text="4,900원" />
+
+                    <TextView
+                        android:id="@+id/smoothie_price_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:tag="5"
+                        android:text="5,800원" />
+                </TableRow>
+            </TableLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:id="@+id/sv4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible">
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="현재 준비중 입니다."
+                android:textSize="34sp"
+                android:textStyle="bold" />
+        </ScrollView>
+
+        <ScrollView
+            android:id="@+id/sv5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <ImageButton
+                        android:id="@+id/dessert_ib_1"
+                        android:layout_width="125dp"
+                        android:layout_height="125dp"
+                        android:backgroundTint="#FFFFFF"
+                        android:onClick="order_dessert"
+                        android:src="@drawable/dessert1"
+                        android:tag="1" />
+
+                    <ImageButton
+                        android:id="@+id/dessert_ib_2"
+                        android:layout_width="125dp"
+                        android:layout_height="125dp"
+                        android:backgroundTint="#FFFFFF"
+                        android:onClick="order_dessert"
+                        android:src="@drawable/dessert2"
+                        android:tag="2" />
+
+                    <ImageButton
+                        android:id="@+id/dessert_ib_3"
+                        android:layout_width="125dp"
+                        android:layout_height="125dp"
+                        android:backgroundTint="#FFFFFF"
+                        android:onClick="order_dessert"
+                        android:src="@drawable/dessert3"
+                        android:tag="3" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/dessert_name_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="1"
+                        android:text="민트 초코 케익" />
+
+                    <TextView
+                        android:id="@+id/dessert_name_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="2"
+                        android:text="까망베르 치즈 케익" />
+
+                    <TextView
+                        android:id="@+id/dessert_name_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="3"
+                        android:text="초코 무스 케익" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/dessert_price_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="1"
+                        android:text="7,000원" />
+
+                    <TextView
+                        android:id="@+id/dessert_price_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="2"
+                        android:text="10,000원" />
+
+                    <TextView
+                        android:id="@+id/dessert_price_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="3"
+                        android:text="8,000원" />
+                </TableRow>
+            </TableLayout>
+        </ScrollView>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/layout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableLayout
+                android:id="@+id/order_show"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"/>
+        </ScrollView>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:background="#374270"
+        android:gravity="center"
+        android:text="주문 목록"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_cnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="30dp"
+        android:alpha="0.75"
+        android:text="총 0개 결제"
+        android:textColor="#2196F3"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/frameLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="2dp"
+        android:text="0원"
+        android:textAlignment="textEnd"
+        android:textColor="#3F51B5"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/frameLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cnt" />
+
+    <ImageButton
+        android:id="@+id/ib_cancel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="#FFFFFF"
+        android:onClick="ib_cancel"
+        android:src="@drawable/cancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/frameLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_price" />
+
+    <ImageButton
+        android:id="@+id/ib_pay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#FFFFFF"
+        android:onClick="ib_pay"
+        android:src="@drawable/pay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/frameLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/ib_cancel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

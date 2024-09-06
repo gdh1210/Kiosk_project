@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="565dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/op_iv1"
+                android:layout_width="128dp"
+                android:layout_height="match_parent"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/op_tv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/op_tv2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView45"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="  HOT / ICE"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView49"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:hint="   필수 1개 선택" />
+
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ToggleButton
+                android:id="@+id/tb1_1"
+                android:layout_width="87dp"
+                android:layout_height="wrap_content"
+                android:alpha="0.5"
+                android:background="@drawable/tb_layout"
+                android:backgroundTint="#FFFFFF"
+                android:checked="false"
+                android:text="HOT"
+                android:textOff="HOT\n\n0원"
+                android:textOn="HOT\n\n0원"
+                android:textSize="16sp" />
+
+            <ToggleButton
+                android:id="@+id/tb1_2"
+                android:layout_width="87dp"
+                android:layout_height="wrap_content"
+                android:alpha="0.5"
+                android:background="@drawable/tb_layout"
+                android:backgroundTint="#FFFFFF"
+                android:text="ICE"
+                android:textOff="ICE\n\n0원"
+                android:textOn="ICE\n\n0원"
+                android:textSize="16sp" />
+        </androidx.gridlayout.widget.GridLayout>
+
+        <TextView
+            android:id="@+id/textView46"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  토핑"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView50"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:hint="   선택 최대 3개" />
+
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ToggleButton
+                android:id="@+id/tb2_1"
+                android:layout_width="87dp"
+                android:layout_height="wrap_content"
+                android:alpha="0.5"
+                android:background="@drawable/tb_layout"
+                android:backgroundTint="#FFFFFF"
+                android:text="ToggleButton"
+                android:textOff="바닐라\n시럽토핑\n+500원"
+                android:textOn="바닐라\n시럽토핑\n+500원"
+                android:textSize="16sp" />
+
+            <ToggleButton
+                android:id="@+id/tb2_2"
+                android:layout_width="87dp"
+                android:layout_height="wrap_content"
+                android:alpha="0.5"
+                android:background="@drawable/tb_layout"
+                android:backgroundTint="#FFFFFF"
+                android:text="ToggleButton"
+                android:textOff="헤이즐넛\n시럽토핑\n+500원"
+                android:textOn="헤이즐넛\n시럽토핑\n+500원"
+                android:textSize="16sp" />
+
+            <ToggleButton
+                android:id="@+id/tb2_3"
+                android:layout_width="87dp"
+                android:layout_height="match_parent"
+                android:alpha="0.5"
+                android:background="@drawable/tb_layout"
+                android:backgroundTint="#FFFFFF"
+                android:checked="false"
+                android:text="ToggleButton"
+                android:textOff="선택없음\n\n0원"
+                android:textOn="선택없음\n\n0원"
+                android:textSize="16sp" />
+
+        </androidx.gridlayout.widget.GridLayout>
+
+        <TextView
+            android:id="@+id/textView47"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  기타"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView51"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:hint="   선택" />
+
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ToggleButton
+                android:id="@+id/tb3_1"
+                android:layout_width="87dp"
+                android:layout_height="wrap_content"
+                android:alpha="0.5"
+                android:background="@drawable/tb_layout"
+                android:backgroundTint="#FFFFFF"
+                android:text="ToggleButton"
+                android:textOff="얼음양\n많이\n0원"
+                android:textOn="얼음양\n많이\n0원"
+                android:textSize="16sp" />
+
+            <ToggleButton
+                android:id="@+id/tb3_2"
+                android:layout_width="87dp"
+                android:layout_height="wrap_content"
+                android:alpha="0.5"
+                android:background="@drawable/tb_layout"
+                android:backgroundTint="#FFFFFF"
+                android:text="ToggleButton"
+                android:textOff="얼음양\n보통\n0원"
+                android:textOn="얼음양\n보통\n0원"
+                android:textSize="16sp" />
+
+            <ToggleButton
+                android:id="@+id/tb3_3"
+                android:layout_width="87dp"
+                android:layout_height="wrap_content"
+                android:alpha="0.5"
+                android:background="@drawable/tb_layout"
+                android:backgroundTint="#FFFFFF"
+                android:text="ToggleButton"
+                android:textOff="얼음양\n조금\n0원"
+                android:textOn="얼음양\n조금\n0원"
+                android:textSize="16sp" />
+
+            <ToggleButton
+                android:id="@+id/tb3_4"
+                android:layout_width="87dp"
+                android:layout_height="wrap_content"
+                android:alpha="0.5"
+                android:background="@drawable/tb_layout"
+                android:backgroundTint="#FFFFFF"
+                android:text="ToggleButton"
+                android:textOff="얼음없이\n\n0원"
+                android:textOn="샷 추가\n\n0원"
+                android:textSize="16sp" />
+        </androidx.gridlayout.widget.GridLayout>
+
+        <TextView
+            android:id="@+id/textView48"
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+
+        <Button
+            android:id="@+id/op_bt1"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#2196F3"
+            android:onClick="op_bt1"
+            android:text="선택완료"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>
