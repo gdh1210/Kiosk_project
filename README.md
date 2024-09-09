@@ -93,6 +93,8 @@ int main() {
     }
 }
 ```
+메인화면
+
 ![image](https://github.com/user-attachments/assets/2bae1794-5211-4b07-ab8f-782b763f21b9)
 
 
