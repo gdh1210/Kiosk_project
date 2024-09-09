@@ -93,6 +93,9 @@ int main() {
     }
 }
 ```
+![image](https://github.com/user-attachments/assets/2bae1794-5211-4b07-ab8f-782b763f21b9)
+
+
 
 # add_menu.cpp
 
@@ -223,6 +226,11 @@ void delete_line(const char* filename, int line_number) {
     }
 }
 ```
+![image](https://github.com/user-attachments/assets/639a175f-4891-4b12-a5ab-b5cdb3eeb6c3)
+
+![image](https://github.com/user-attachments/assets/3ad14975-c396-42c1-b321-ed34c067b705)
+
+![image](https://github.com/user-attachments/assets/009a8d1d-677d-4987-aa57-b9a8ffcc0563)
 
 
 # in_store.cpp
@@ -373,6 +381,21 @@ void payment2() {
     }
 }
 ```
+
+![image](https://github.com/user-attachments/assets/5d101903-e740-4b64-8a01-4ae48e466310)
+
+![image](https://github.com/user-attachments/assets/5d8ab083-cbe9-4dfc-8823-43686cadb381)
+
+![image](https://github.com/user-attachments/assets/b51019ad-6b74-4dbf-8f6a-f7b8bb7e210e)
+
+![image](https://github.com/user-attachments/assets/371a7ee8-f3ec-4038-8bfe-62c5d9af20c4)
+
+![image](https://github.com/user-attachments/assets/143e91e3-9bc5-41d0-8a56-c07ace3555ca)
+결제 진행
+![image](https://github.com/user-attachments/assets/28480e1f-9353-4808-9b92-e2c713c7dda9)
+
+
+
 
 # take_out.cpp
 
