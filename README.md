@@ -9,8 +9,13 @@
 
 ---
 
-#C코드 작성전 구성및 동작 초안
+# C코드 작성전 구성및 동작 초안
+
+제일먼저 키오스크의 동작 구조를 살펴보고 어떤기능을 구현해야 할지 살펴보았고 정리한 자료를 바탕으로 시각화 하였다.
+
 ![image](https://github.com/user-attachments/assets/4305b8d9-af17-4403-a244-fd938ac956c2)
+
+각각 빨간줄과 파랑줄은 데이터를 외부에 저장하고 읽어오는 방식으로 동작시 필요한 파일을 구분해놓았다.
 
 # Module.h
 
@@ -59,7 +64,12 @@ void payment();
 void payment2();
 ```
 
+코드 상단의 라이브러리 호출 함수 모음이다. 제작시 사용된 라이브러리 호출이나 함수간 호출 연결 및 전역변수 연결, 구조체의 정보 수용을 담당하는 부분이다.  
+기능적으로는 아무것도 동작하지 않으나 각 .cpp 파일의 상단에 위치하여 반복되는 호출 부분을 한줄로 압축하고 코드를 간결화 하여 가독성을 높이며 함수 호출 간에 연결로 역활로 만들었다.
+
 # kioskmain.cpp
+
+제일먼저 작성한 메인부분으로 어떤기능을 동작할지 선택하는 부분이다.  
 
 ```C++
 int order_cnt = 0;
@@ -93,13 +103,13 @@ int main() {
     }
 }
 ```
-메인화면
+메인화면을 호출하여 보이는 모습이다.  
 
 ![image](https://github.com/user-attachments/assets/2bae1794-5211-4b07-ab8f-782b763f21b9)
 
-
-
 # add_menu.cpp
+
+메뉴 추가를 진행하는 부분으로 위에 미리 정해둔 동작대로 매장, 포장 쪽 메뉴를 추가할지 선택하고 그에 해당하는 메뉴를 추가하면 외부 저장소에(.txt) 저장되어 다음에 호출시 그대로 사용할 수 있게 만들었다.  
 
 ```C++
 //.3 메뉴작성
@@ -228,12 +238,23 @@ void delete_line(const char* filename, int line_number) {
     }
 }
 ```
+
+1을 입력해 매장메뉴를 선택했고 현재 저장된 리스트를 매장메뉴 외부저장소 txt에서 받아와 표시해준다.
+
 ![image](https://github.com/user-attachments/assets/639a175f-4891-4b12-a5ab-b5cdb3eeb6c3)
+
+2를 입력해 메뉴작성을 순서대로 순번, 제품명, 가격 순으로 입력하여 진행하였고 1을 입력해 리스트를 수동으로 업데이트하여 정상적으로 추가되었는지 표시해준다.
 
 ![image](https://github.com/user-attachments/assets/3ad14975-c396-42c1-b321-ed34c067b705)
 
+외부저장소인 txt파일을 열었을 때에도 정상적으로 추가가 되어있는 것을 확인 할 수 있다.
+
 ![image](https://github.com/user-attachments/assets/009a8d1d-677d-4987-aa57-b9a8ffcc0563)
 
+시행착오 및 정리
+
+:x:문제점
+* 
 
 # in_store.cpp
 
@@ -476,4 +497,11 @@ void take_out() {
 
 ```java
 
+
+
 ```
+
+
+
+### 참조
+키오스크 동작 참조 - https://help-center.payhere.in/feature/kiosk/customer
