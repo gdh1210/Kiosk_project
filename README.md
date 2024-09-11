@@ -1351,6 +1351,8 @@ public class Kiosk extends AppCompatActivity {
 
 메인 화면   
 
+![image](https://github.com/user-attachments/assets/366fde64-891e-466a-bb2e-d779f0f52450)
+
 
 
 # 마치며
