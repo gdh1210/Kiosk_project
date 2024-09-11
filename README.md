@@ -523,7 +523,11 @@ void take_out() {
 
 # Kiosk.java
 
-C언어로 구현된 키오스크 프로젝트를 참조하여 비슷한 동작방식으로 Java 에서 구현했다.
+C언어로 구현된 키오스크 프로젝트를 참조하여 비슷한 동작방식으로 Java 에서 구현했다.  
+하나의 액티비티에서 구현하다보니 길어져서 하단에 접어 놓았다.
+
+<details>
+<summary>접기/펼치기</summary>
 
 ```java
 public class Kiosk extends AppCompatActivity {
@@ -1343,8 +1347,9 @@ public class Kiosk extends AppCompatActivity {
     //config
 }
 ```
-메인 화면 
-![image](https://github.com/user-attachments/assets/3eb17912-0544-42ac-ae80-c7bac018ff5d)
+</details>
+
+메인 화면   
 
 
 
@@ -1352,7 +1357,7 @@ public class Kiosk extends AppCompatActivity {
 
 * 작성을 하다보니 하나의 액티비티에서 진행을 하게 되었는데 오전에는 수업을 진행하고 오후에는 프로젝트작업을 병행하다보니 프로젝트 작업 시간이 부족하기도 했고 작성 당시 안드로이드 환경에 익숙하지 않고 GUI 위주로 교육을 진행하다 보니 액티비티 분리하는 개념을 잘몰라서 그런면도 있었다.
 * 기존에 C언어로 만들었던 기능을 그대로 Java에서 구현 하였는데 GUI의 유무도 그렇고 완전히 다른 언어를 사용하다보니 구상이나 동작 방식은 참조가 가능했는데 코드짤 때에는 그냥 프로젝트를 하나 더 진행하는 느낌이었고 각 동작을 구현하는데 C언어 보다 수월하다는 느낌을 받았다.
-* 
+* 포장 부분은 복붙으로 똑같이 만드려고 했으나 
 
 진행기간: 7/29(월) ~ 8/2(금) 5일
 
@@ -1362,7 +1367,7 @@ public class Kiosk extends AppCompatActivity {
 Java tablelayout 활용 - https://stackoverflow.com/questions/6976971/index-of-table-row-in-tablelayout  
 안드로이드 tablelayout 활용 - https://ju-hy.tistory.com/54  
 안드로이드 Kotlin 언어 - https://appmaster.io/ko/blog/kotlin-gaebalja-doegi  
-안드로이드 탭버튼 구현및 이미지 삽입 - https://stackoverflow.com/questions/17648780/how-to-place-image-in-a-tab-so-that-it-looks-like-an-icon
+안드로이드 탭버튼 구현및 이미지 삽입 - https://stackoverflow.com/questions/17648780/how-to-place-image-in-a-tab-so-that-it-looks-like-an-icon  
 Kotlin 언어 사용방법 소개 - https://kotlinlang.org/docs/getting-started.html  
 chat gpt 안드로이드 구성 관련 질문 - https://chatgpt.com/share/a354d3c5-47ba-41c2-9668-6c688c3ebc4b  
 안드로이드 UI 조사 - https://kr.pinterest.com/citysite1025/android-ui/  
