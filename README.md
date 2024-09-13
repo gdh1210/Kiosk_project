@@ -1364,9 +1364,9 @@ public class Kiosk extends AppCompatActivity {
 * 전체삭제 버튼을 누를시 기록되어있는 메뉴 전체를 삭제한다.
 
 <div align="center">
-<img src="https://github.com/user-attachments/assets/99c4b110-71ed-4d2c-9744-b0c5887fd702" width="280" height="600">
-<img src="https://github.com/user-attachments/assets/c393b4f8-189f-4d9e-bee3-938e8d4e8933" width="280" height="600">
-<img src="https://github.com/user-attachments/assets/6deac00e-65a8-4139-bf6e-c8725d1a2fbd" width="280" height="600">
+<img src="https://github.com/user-attachments/assets/99c4b110-71ed-4d2c-9744-b0c5887fd702" width="260" height="550">
+<img src="https://github.com/user-attachments/assets/c393b4f8-189f-4d9e-bee3-938e8d4e8933" width="260" height="550">
+<img src="https://github.com/user-attachments/assets/6deac00e-65a8-4139-bf6e-c8725d1a2fbd" width="260" height="550">
 </div>
 
 * 메뉴선택이 완료된 이후 결제창으로 넘어오면 보이는 화면이다 상단의 리스트에 주문했던 내역들이 나오며 하단의 블록에 개수와 가격을 표시한다.
@@ -1375,9 +1375,9 @@ public class Kiosk extends AppCompatActivity {
 > 2222: 10000원 할인
 
 <div align="center">
-<img src="https://github.com/user-attachments/assets/559feb62-f01e-4b22-8f6d-1438e4441f0c" width="280" height="600">
-<img src="https://github.com/user-attachments/assets/1933b29d-6c81-4690-a20d-9ebb7e3a106d" width="280" height="600">
-<img src="https://github.com/user-attachments/assets/9279932e-1bc8-4ce6-8b2e-57f1780d5ca3" width="280" height="600">
+<img src="https://github.com/user-attachments/assets/559feb62-f01e-4b22-8f6d-1438e4441f0c" width="260" height="550">
+<img src="https://github.com/user-attachments/assets/1933b29d-6c81-4690-a20d-9ebb7e3a106d" width="260" height="550">
+<img src="https://github.com/user-attachments/assets/9279932e-1bc8-4ce6-8b2e-57f1780d5ca3" width="260" height="550">
 </div>
 
 * 카드결제를 선택시 나오는 화면으로 카드 투입과 결제하는 부분을 딜레이를 통해 구현했고 2초뒤 다음 화면으로 넘어간다.
