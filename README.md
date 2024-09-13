@@ -1349,9 +1349,28 @@ public class Kiosk extends AppCompatActivity {
 ```
 </details>
 
-메인 화면   
+각 동작별 화면 설명
 
-![image](https://github.com/user-attachments/assets/366fde64-891e-466a-bb2e-d779f0f52450)
+<div align="center">
+<img src="https://github.com/user-attachments/assets/366fde64-891e-466a-bb2e-d779f0f52450">
+</div>
+
+
+![image](https://github.com/user-attachments/assets/99c4b110-71ed-4d2c-9744-b0c5887fd702)
+
+![image](https://github.com/user-attachments/assets/c393b4f8-189f-4d9e-bee3-938e8d4e8933)
+
+![image](https://github.com/user-attachments/assets/6deac00e-65a8-4139-bf6e-c8725d1a2fbd)
+
+![image](https://github.com/user-attachments/assets/559feb62-f01e-4b22-8f6d-1438e4441f0c)
+
+![image](https://github.com/user-attachments/assets/1933b29d-6c81-4690-a20d-9ebb7e3a106d)
+
+![image](https://github.com/user-attachments/assets/9279932e-1bc8-4ce6-8b2e-57f1780d5ca3)
+
+![image](https://github.com/user-attachments/assets/4da531e9-e899-4c70-bac7-a19c6da04e01)
+
+![image](https://github.com/user-attachments/assets/e5814922-902d-4086-85c0-65e87014c67c)
 
 
 
