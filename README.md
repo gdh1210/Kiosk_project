@@ -1364,30 +1364,37 @@ public class Kiosk extends AppCompatActivity {
 * 전체삭제 버튼을 누를시 기록되어있는 메뉴 전체를 삭제한다.
 
 <div align="center">
-<img src="https://github.com/user-attachments/assets/99c4b110-71ed-4d2c-9744-b0c5887fd702" width="300" height="600">
-<img src="https://github.com/user-attachments/assets/c393b4f8-189f-4d9e-bee3-938e8d4e8933" width="300" height="600">
-<img src="https://github.com/user-attachments/assets/6deac00e-65a8-4139-bf6e-c8725d1a2fbd" width="300" height="600">
+<img src="https://github.com/user-attachments/assets/99c4b110-71ed-4d2c-9744-b0c5887fd702" width="280" height="600">
+<img src="https://github.com/user-attachments/assets/c393b4f8-189f-4d9e-bee3-938e8d4e8933" width="280" height="600">
+<img src="https://github.com/user-attachments/assets/6deac00e-65a8-4139-bf6e-c8725d1a2fbd" width="280" height="600">
 </div>
 
-* 
+* 메뉴선택이 완료된 이후 결제창으로 넘어오면 보이는 화면이다 상단의 리스트에 주문했던 내역들이 나오며 하단의 블록에 개수와 가격을 표시한다.
+* 쿠폰 사용하기 버튼을 통해 특정 번호를 입력 받으면 가격을 할인하는 방식으로 구현해 놓았고 총 가격부분을 조정하여 업데이트 하는 방식으로 진행된다.
+> 1111: 5000원 할인
+> 2222: 10000원 할인
 
 <div align="center">
-<img src="https://github.com/user-attachments/assets/559feb62-f01e-4b22-8f6d-1438e4441f0c" width="300" height="600">
-<img src="https://github.com/user-attachments/assets/1933b29d-6c81-4690-a20d-9ebb7e3a106d" width="300" height="600">
-<img src="https://github.com/user-attachments/assets/9279932e-1bc8-4ce6-8b2e-57f1780d5ca3" width="300" height="600">
+<img src="https://github.com/user-attachments/assets/559feb62-f01e-4b22-8f6d-1438e4441f0c" width="280" height="600">
+<img src="https://github.com/user-attachments/assets/1933b29d-6c81-4690-a20d-9ebb7e3a106d" width="280" height="600">
+<img src="https://github.com/user-attachments/assets/9279932e-1bc8-4ce6-8b2e-57f1780d5ca3" width="280" height="600">
 </div>
 
-![image](https://github.com/user-attachments/assets/4da531e9-e899-4c70-bac7-a19c6da04e01)
+* 카드결제를 선택시 나오는 화면으로 카드 투입과 결제하는 부분을 딜레이를 통해 구현했고 2초뒤 다음 화면으로 넘어간다.
+* 결제가 끝이나고 제품을 받아갈 주문번호, 영수증 출력 유무 그리고 초기 화면으로 돌아가기 까지 구성되어있다.
 
-![image](https://github.com/user-attachments/assets/e5814922-902d-4086-85c0-65e87014c67c)
+<div align="center">
+<img src="https://github.com/user-attachments/assets/4da531e9-e899-4c70-bac7-a19c6da04e01" width="300" height="600">
+<img src="https://github.com/user-attachments/assets/e5814922-902d-4086-85c0-65e87014c67c" width="300" height="600">
+</div>
 
-
+초기화면인 메인으로 돌아오면 위의 동작들을 다시 수행 가능하다.
 
 # 마치며
 
 * 작성을 하다보니 하나의 액티비티에서 진행을 하게 되었는데 오전에는 수업을 진행하고 오후에는 프로젝트작업을 병행하다보니 프로젝트 작업 시간이 부족하기도 했고 작성 당시 안드로이드 환경에 익숙하지 않고 GUI 위주로 교육을 진행하다 보니 액티비티 분리하는 개념을 잘몰라서 그런면도 있었다.
 * 기존에 C언어로 만들었던 기능을 그대로 Java에서 구현 하였는데 GUI의 유무도 그렇고 완전히 다른 언어를 사용하다보니 구상이나 동작 방식은 참조가 가능했는데 코드짤 때에는 그냥 프로젝트를 하나 더 진행하는 느낌이었고 각 동작을 구현하는데 C언어 보다 수월하다는 느낌을 받았다.
-* 포장 부분은 복붙으로 똑같이 만드려고 했으나 
+* 포장 부분은 복붙으로 똑같이 만드려고 했으나 onclick 이벤트 설정부분이나. 액티비티 내부에 id를 참조하는 부분들이 생각 보다 많아서 시간이 많이 들어갈 것 같아 구현을 포기했다 또한 사용자 정보를 화이트 리스트의 형식으로 저장해 기록된 포인트를 사용하여 할인 받는 방식을 구현 하려고 했으나 프로젝트의 진행 시간 부족으로 구상만 하고 구현은 하지 못했다.
 
 진행기간: 7/29(월) ~ 8/2(금) 5일
 
