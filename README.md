@@ -1351,22 +1351,31 @@ public class Kiosk extends AppCompatActivity {
 
 각 동작별 화면 설명
 
+* 시작시 메인 화면으로 메뉴와 포장을 선택할 수 있다.  
+* 메뉴선택시 보이는 초기 화면이며 탭의기능을 하는 버튼 제품을 구성하는 이미지 버튼 제품의 입력정보를 기록하는 테이블레이아웃 으로 구성되어 있다.  
+
 <div align="center">
-<img src="https://github.com/user-attachments/assets/366fde64-891e-466a-bb2e-d779f0f52450">
+<img src="https://github.com/user-attachments/assets/366fde64-891e-466a-bb2e-d779f0f52450" width="300" height="600">
+<img src="https://github.com/user-attachments/assets/fc0f3197-23f7-4594-8e7a-8d96191d771d" width="300" height="600">
 </div>
 
+* 메뉴화면에서 제품을 선택시 보이는 화면으로 스무디와 구성이 다르고 디저트는 선택시 바로 기록이 가능하도록 설정되어있다.  
+* 주문목록에 추가된 제품은 +, - 버튼을 통해 수량을 조정할수 있고 x 버튼을 통해 선택적 삭제 또한 가능하다 그리고 우측의 개수와 가격부분을 업데이트 하도록 설정했다.
+* 전체삭제 버튼을 누를시 기록되어있는 메뉴 전체를 삭제한다.
 
-![image](https://github.com/user-attachments/assets/99c4b110-71ed-4d2c-9744-b0c5887fd702)
+<div align="center">
+<img src="https://github.com/user-attachments/assets/99c4b110-71ed-4d2c-9744-b0c5887fd702" width="300" height="600">
+<img src="https://github.com/user-attachments/assets/c393b4f8-189f-4d9e-bee3-938e8d4e8933" width="300" height="600">
+<img src="https://github.com/user-attachments/assets/6deac00e-65a8-4139-bf6e-c8725d1a2fbd" width="300" height="600">
+</div>
 
-![image](https://github.com/user-attachments/assets/c393b4f8-189f-4d9e-bee3-938e8d4e8933)
+* 
 
-![image](https://github.com/user-attachments/assets/6deac00e-65a8-4139-bf6e-c8725d1a2fbd)
-
-![image](https://github.com/user-attachments/assets/559feb62-f01e-4b22-8f6d-1438e4441f0c)
-
-![image](https://github.com/user-attachments/assets/1933b29d-6c81-4690-a20d-9ebb7e3a106d)
-
-![image](https://github.com/user-attachments/assets/9279932e-1bc8-4ce6-8b2e-57f1780d5ca3)
+<div align="center">
+<img src="https://github.com/user-attachments/assets/559feb62-f01e-4b22-8f6d-1438e4441f0c" width="300" height="600">
+<img src="https://github.com/user-attachments/assets/1933b29d-6c81-4690-a20d-9ebb7e3a106d" width="300" height="600">
+<img src="https://github.com/user-attachments/assets/9279932e-1bc8-4ce6-8b2e-57f1780d5ca3" width="300" height="600">
+</div>
 
 ![image](https://github.com/user-attachments/assets/4da531e9-e899-4c70-bac7-a19c6da04e01)
 
