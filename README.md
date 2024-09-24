@@ -9,7 +9,7 @@
 
 ## 목차
 
-1. [C언어를 이용한 Kiosk Project](#JAVA)
+1. [C언어를 이용한 Kiosk Project](#java)
    
 2. [Java 언어를 이용한 Kiosk Project](#Kiosk.java)
 
