@@ -7,6 +7,12 @@
 <img src="https://img.shields.io/badge/android%20studio-346ac1?style=for-the-badge&logo=android%20studio&logoColor=white">
 </div>
 
+## 목차
+
+1. [C언어를 이용한 Kiosk Project](#kioskmain.cpp)
+   
+2. [Java 언어를 이용한 Kiosk Project](#Kiosk.java)
+
 ---
 
 # C코드 작성전 구성및 동작 초안
