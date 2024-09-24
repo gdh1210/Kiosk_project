@@ -11,7 +11,7 @@
 
 1. [C 언어를 이용한 Kiosk Project](#kioskmain)
    
-2. [Java 언어를 이용한 Kiosk Project](#kiosk)
+2. [Java 언어를 이용한 Kiosk Project](#java)
 
 ---
 
