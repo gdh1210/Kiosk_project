@@ -11,7 +11,7 @@
 
 1. [C 언어를 이용한 Kiosk Project](#kioskmain)
    
-2. [Java 언어를 이용한 Kiosk Project](#java)
+2. [Java 언어를 이용한 Kiosk Project](#java-project)
 
 ---
 
@@ -526,7 +526,8 @@ void take_out() {
 진행기간: 5/22(수) ~ 5/29(수) 6일 
 
 ---
-#Java
+#Java Project
+
 ## Kiosk.java
 
 C언어로 구현된 키오스크 프로젝트를 참조하여 비슷한 동작방식으로 Java 에서 구현했다.  
