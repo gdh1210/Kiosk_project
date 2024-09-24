@@ -526,7 +526,7 @@ void take_out() {
 진행기간: 5/22(수) ~ 5/29(수) 6일 
 
 ---
-#Java Project
+# Java Project
 
 ## Kiosk.java
 
